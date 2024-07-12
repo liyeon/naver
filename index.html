@@ -8,13 +8,17 @@
 </head>
 
 <body>
+  <!-- #skipNav 시작 -->
   <div id="skipNav">
     <a href="#container">
       본문내용바로가기
     </a>
   </div>
+  <!-- #wrap 시작 -->
   <div id="wrap">
+    <!-- header 시작 -->
     <header id="header">
+      <!-- search-area -->
       <div class="search-area">
         <h1 class="logo">
           <a href="">
@@ -23,16 +27,68 @@
           </a>
         </h1>
         <form action="" method="get" class="search-form">
-          
+          <fieldset>
+            <legend>검색</legend>
+            <input type="text" name="" id="" class="input-text">
+
+            <button type="button" class="btn-keyboard">
+              <span class="blind">가상 키보드</span>
+            </button>
+            <button type="button" class="btn-auto">
+              <span class="blind">자동완성</span>
+            </button>
+            <button type="submit" class="btn-submit">
+              <span class="blind">전송</span>
+            </button>
+          </fieldset>
         </form>
       </div>
-      <div class="gnb-area"></div>
-      <div class="util-area"></div>
-      <div class="util-area"></div>
+      <!-- gnb-area 시작 -->
+      <div class="gnb-area">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="link">
+              <i class="icon ic-mail"></i>
+              <span class="name">메일</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="link">
+              <i class="icon ic-cafe"></i>
+              <span class="name">카페</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- util-area 시작-->
+      <div class="util-area">
+        <button type="button" class="btn-menu" aria-expanded="false" aria-haspopup="menu">
+          <span class="blind">확장메뉴</span>
+        </button>
+        <a href="" class="btn-pay">
+          <span class="blind">네이버페이</span>
+        </a>
+      </div>
+      <!-- util-area 시작-->
+      <div class="util-area">
+        <button type="button" class="btn-talk" aria-expanded="false" aria-haspopup="menu">
+          <span class="blind">네이버톡</span>
+        </button>
+        <button type="button" class="btn-alert" aria-expanded="false" aria-haspopup="menu">
+          <span class="blind">알림혜택</span>
+        </button>
+        <a href="" class="btn-cart" aria-expanded="false" aria-haspopup="menu">
+          <span class="blind">장바구니</span>
+        </a>
+      </div>
     </header>
-    <main id="container">
 
+    <!-- #container 시작 -->
+    <main id="container">
+      
     </main>
+
+    <!-- #footer 시작 -->
     <footer id="footer">
 
     </footer>
