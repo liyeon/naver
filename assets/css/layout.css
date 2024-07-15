@@ -1,0 +1,55 @@
+/*
+  header, footer, reset
+*/
+
+@import './reset.css';
+@import './common.css';
+
+#wrap{
+  min-width:1340px; /*더이상줄어들지않게*/
+}
+
+#header{
+  width: 1280px;
+  height: 215px;
+  margin: 0 auto;
+}
+
+#header .search-area{
+  display: flex;
+  width: 706px;
+  border: 1px solid #03c75a;
+  border-radius: 33px;
+  background-color: #fff;
+}
+#header .search-area .logo{
+  display: block;
+  padding: 17px 16px 17px 27px;
+}
+#header .search-area .logo a{}
+#header .search-area .logo svg{
+  height: 24px;
+  fill: #03c75a;
+}
+
+#header .search-form{
+  flex: 1;
+}
+#header .search-form fieldset{
+  display: flex;
+  height: 100%;
+}
+#header .search-form .input-text{
+  flex: 1;
+}
+#header .search-form .btn-keyboard{}
+#header .search-form .btn-auto{}
+#header .search-form .btn-submit{}
+#header .search-form .btn-submit svg{
+  height: 25px;
+  fill: #03c75a;
+}
+
+#header .gnb-area{}
+
+#header .util-area{}
