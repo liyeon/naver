@@ -1,18 +1,19 @@
-.blind{
+.blind {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
-  clip:rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   margin: -1px;
   border: 0;
 }
 
-#skipNav{
+#skipNav {
   position: absolute;
 
 }
-#skipNav a{
+
+#skipNav a {
   position: absolute;
   white-space: nowrap;
   padding: 10px;
@@ -20,7 +21,20 @@
   color: #fff;
   top: -100px;
 }
+
 #skipNav a:focus,
-#skipNav a:active{
+#skipNav a:active {
   top: 0;
+}
+
+.sc-login .link-login::before,
+#header .util-area [class*="btn-"]::after,
+#header .gnb-area .ic-mail::after,
+#header .gnb-area .ic-cafe::after,
+#header .gnb-area .icon::before,
+#header .search-form .btn-keyboard::before,
+#header .search-form .btn-auto::before {
+  background-image: url('../images/sp-bgx2.png');
+  background-repeat: no-repeat;
+  background-size: 458px 444px;
 }
