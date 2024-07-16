@@ -306,6 +306,115 @@
               </button>
             </div>
           </div>
+          <div class="group-commerce">
+            <div class="commerce-left">
+              <div class="frame mall-area">
+                <span class="blind">몰 바로가기</span>
+                <div class="row">
+                  <a href="">쿠팡</a>
+                  <span class="dot"></span>
+                  <a href=""><strong>G마켓</strong></a>
+                  <span class="dot"></span>
+                  <a href="">옥션</a>
+                  <span class="dot"></span>
+                  <a href="">SSG닷컴</a>
+                </div>
+                <div class="row">
+                  <a href="">11번가</a>
+                  <span class="dot"></span>
+                  <a href="">올리브영</a>
+                  <span class="dot"></span>
+                  <a href=""><strong>위메프</strong></a>
+                  <span class="dot"></span>
+                  <a href="">하프클럽</a>
+                </div>
+                <div class="row">
+                  <a href=""><strong>GS SHOP</strong></a>
+                  <span class="dot"></span>
+                  <a href="">CJ온스타일</a>
+                  <span class="dot"></span>
+                  <a href="">패션플러스</a>
+                </div>
+              </div>
+              <div class="frame menu-area">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="">
+                      <span class="icon ic-shopping"></span>
+                      <span class="text">쇼핑홈</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="">
+                      <span class="icon ic-review"></span>
+                      <span class="text">리뷰적립</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="">
+                      <span class="icon ic-order"></span>
+                      <span class="text">주문</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="">
+                      <span class="icon ic-cart"></span>
+                      <span class="text">장바구니</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="ad-area">
+                <a href="">
+                  <img src="./assets/images/shopping/ad1.jpg" class="frame" alt="제이에스티나 7월 한정 실버위크">
+                  <div class="text">여름 한정 단 7일만! 시원한 빅세일</div>
+                </a>
+              </div>
+            </div>
+            <div class="commerce-right">
+              <ul class="product-list">
+                <script>
+                  let descript = [
+                    "녹물샤워 그만!소비자 99%만족",
+                    "BEST 인기신상~한벌로~예쁘게",
+                    "허리밴딩~편안! 지금~65%↓sale",
+                    "소유 승모근마사지기 1+1!",
+                    "역시!너무예뻤어집들이선물 득템",
+                    "단하루만7%할인 서둘러서~겟!",
+                    "인기폭발!한우~꿀육회",
+                    "시원한~여름룩! 5컬러~1만원대!",
+                    "바스락 썸머원단제대로된한벌Set",
+                    "시원하고예쁜데? 2만원대Sale까지"
+                  ];
+  
+                  for (let i = 0; i < descript.length; i++) {
+                      let num;
+                      if (i < descript.length-1) {
+                        num = '00' + (i + 1);
+                      } else {
+                        num = '0'+(i + 1);
+                      }
+                      let desc = descript[i];
+                      document.write("<li class='product-item'><a href='#'>");
+                      document.write("<figure>");
+                      document.write("<div><img src='./assets/images/shopping/"+num+".jpg' alt='"+desc+"'></div>");
+                      document.write("<figcaption>"+desc+"</figcaption>");
+                      document.write("</figure>");
+                      document.write("</a></li>");
+                  }
+                  </script>
+              </ul>
+            </div>
+          </div>
+          <div class="group-today">
+            <strong class="title">오늘의 혜택</strong>
+            <a href="">
+              <img src="./assets/images/shopping/today_logo.png" alt="">
+              <span class="today-desc">
+                기한한정! 물티슈 구매하는 <em class="point">누구든 10% 할인쿠폰</em> 드려요~
+              </span>
+            </a>
+          </div>
           <div class="group-control">
             <div class="control-area">
               <button type="button" class="btn-prev">

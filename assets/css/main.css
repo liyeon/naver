@@ -38,7 +38,7 @@ body {
 }
 
 .group-header {
-  padding: 18px 20px 17px;
+  padding: 18px 20px 10px 20px;
 }
 
 .group-header .tab-list {
@@ -445,6 +445,96 @@ body {
   border-left: 0;
   border-radius: 0 4px 4px 0;
 }
+
+.group-commerce{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 376px;
+  padding: 0 20px 1px;
+}
+.group-commerce .commerce-left{
+  flex: 1 1;
+}
+
+.group-commerce .commerce-left .mall-area {
+  padding: 9px 11px 4px;
+}
+.group-commerce .commerce-left .mall-area .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.group-commerce .commerce-left .mall-area .row+.row{
+  margin-top: 5px;
+}
+.group-commerce .commerce-left .mall-area .row a{
+  display: flex;
+  position: relative;
+  color: #404040;
+  color: var(--color_caption1);
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.6px;
+}
+.group-commerce .commerce-left .mall-area .row .dot{
+  width: 3px;
+  height: 3px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  border-radius: 50%;
+}
+
+.group-commerce .commerce-left .menu-area{}
+.group-commerce .commerce-left .ad-area{
+  margin-top: 16px;
+}
+.group-commerce .commerce-right { 
+  width: 522px;
+}
+.group-commerce .commerce-right .product-list{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 10px;
+}
+.group-commerce .commerce-right .product-item{
+  min-width: 0;
+}
+
+.group-commerce .commerce-right .product-item:hover figure > div img{
+  scale : 1.1;
+}
+.group-commerce .commerce-right .product-item figure > div{
+  display: flex;
+  width: 98px;
+  height: 126px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #dfdfdf;
+}
+
+.group-commerce .commerce-right .product-item figure > div img{
+  width: 100%;
+
+  object-fit: cover;
+  transition: all 0.5s ease-in-out; 
+}
+
+.group-commerce .commerce-right figcaption{
+  margin-top: 8px;
+  font-size: 1.3rem;
+  line-height: 19px;
+  letter-spacing: -.4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+
 /* main-right */
 .sc-login {
   padding: 21px 20px 18px;
