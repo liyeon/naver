@@ -27,10 +27,14 @@
   top: 0;
 }
 
+
+.sc-news .group-control .control-area .btn-prev::before,
+.sc-news .group-control .control-area .btn-next::before,
+.sc-news .group-control .view-area [class*="btn-"],
+.sc-news .group-issue .btn-all .ic-arrow,
 .sc-login .link-login::before,
 #header .util-area [class*="btn-"]::after,
-#header .gnb-area .ic-mail::after,
-#header .gnb-area .ic-cafe::after,
+#header .gnb-area [class*="ic-"]::after,
 #header .gnb-area .icon::before,
 #header .search-form .btn-keyboard::before,
 #header .search-form .btn-auto::before {

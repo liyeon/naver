@@ -12,20 +12,21 @@
 
 #header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
+  flex-direction: column;
   width: 1280px;
   height: 215px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
+#header .inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  order: 1;
+}
 #header .search-area {
-  position: absolute;
-  top: 52px;
-  left: 50%;
-  transform: translateX(-50%);
-
   display: flex;
   width: 706px;
   border: 1px solid #03c75a;
@@ -39,8 +40,6 @@
   display: block;
   padding: 17px 16px 17px 27px;
 }
-
-#header .search-area .logo a {}
 
 #header .search-area .logo svg {
   height: 24px;
@@ -104,10 +103,6 @@
 
 #header .gnb-area {
   width: 676px;
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 #header .gnb-area .nav-list {
@@ -159,7 +154,9 @@
   margin: auto;
 }
 
-#header .gnb-area .name {}
+#header .gnb-area .name {
+  margin-top: 4px;
+}
 
 #header .gnb-area .ic-mail::after {
   background-position: -244px -41px;
@@ -168,7 +165,46 @@
 #header .gnb-area .ic-cafe::after {
   background-position: -86px -184px;
 }
+#header .gnb-area .ic-blog::after {
+  background-position: -45px -184px;
+}
+#header .gnb-area .ic-shopping::after {
+  background-position: -164px -229px;
+}
+#header .gnb-area .ic-news::after {
+  background-position: -82px -229px;
+}
+#header .gnb-area .ic-stock::after {
+  background-position: -285px 0px;
+}
+#header .gnb-area .ic-property::after {
+  background-position: -123px -229px;
+}
+#header .gnb-area .ic-map::after {
+  background-position: -244px -82px;
+}
+#header .gnb-area .ic-webtoon::after {
+  background-position: -285px -41px;
+}
+#header .gnb-area .ic-chzzk::after {
+  background-image: url('../images/ic-chzzk.png');
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+#header .gnb-area .ic-more::after {
+  background-position: -41px -229px;
+}
 
+#header .gnb-area .ic-more:hover::after {
+  background-position: 0px -229px;
+}
+
+#header .group-util{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
 #header .util-area {
   display: flex;
 }

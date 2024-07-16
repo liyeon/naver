@@ -204,4 +204,7 @@ input {
   border: 0;
 }
 
+strong{
+  font-weight: bold;
+}
 /*초기 세팅*/

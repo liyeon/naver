@@ -22,7 +22,9 @@ body {
   width: 1280px;
   margin: 0 auto;
 }
-
+#container a:hover{
+  text-decoration:underline;
+}
 .main-left {
   width: 830px;
 }
@@ -34,9 +36,6 @@ body {
 .ad-banner {
   overflow: hidden;
 }
-
-.sc-news {}
-
 
 .sc-news .group-header {
   padding: 18px 20px 17px;
@@ -109,16 +108,63 @@ body {
   flex: 1;
 }
 
-.sc-news .group-issue .btn-all {}
+.sc-news .group-issue .btn-all {
+  display: flex;
+}
+.sc-news .group-issue .btn-all .ic-arrow {
+  background-position: -143px -176px;
+  width: 9px;
+  height: 6px;
+  margin: 10px 0 0 5px;
+}
 
-.sc-news .group-issue .link-media {}
+.sc-news .group-issue .link-media {
+  position: relative;
+  padding-left: 25px;
+}
+.sc-news .group-issue .link-media::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  width: 1px;
+  height: 12px;
+}
 
-.sc-news .group-issue .link-issue {}
+.sc-news .group-issue .link-issue {
+  display: flex;
+}
+.sc-news .group-issue .link-issue::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  margin: 12px 6px 0 6px;
+  border-radius: 50%;
+}
 
 .sc-news .group-issue .news-area {
   display: flex;
+  gap: 25px;
 }
 
+.sc-news .group-issue .news-area a:last-child{
+  position: relative;
+}
+.sc-news .group-issue .news-area a:last-child::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -12px;
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+}
 .sc-news .group-media {
   margin: 18px 20px 18px 20px;
   border: 1px solid #ebebeb;
@@ -141,6 +187,43 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.sc-news .group-media .media-item:hover .media-item-more{
+  display: flex;
+}
+.media-item-more{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2868f2;
+}
+
+.media-item-more a{
+  color: #fff;
+}
+.media-item-more a:first-child{
+  position: relative;
+}
+.media-item-more a:first-child::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 39px;
+  width: 1px;
+  height: 12px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+}
+.media-item-more a:hover{
+  font-weight: bold;
 }
 
 /* li 선 긋는 방법 */
@@ -204,15 +287,87 @@ body {
 .sc-news .group-control .control-area {
   display: flex;
   justify-content: center;
+  color: #606060;
+  color: var(--color_caption2);
+  min-width: 156px;
+  padding: 0 16px;
+  font-size: 1.3rem;
+  line-height: 35px;
+  font-weight: 600;
+}
+.sc-news .group-control .control-area .page{
+  min-width: 156px;
+}
+.sc-news .group-control .control-area .point{
+  color: #3a67ea;
+  color: var(--color_news);
+}
+/* .sc-news .group-control .control-area .fraction{} */
+/* .sc-news .group-control .control-area .current{} */
+.sc-news .group-control .control-area .total{
+  color: rgba(96, 96, 96, .5);
+  margin-left: -3px;
+}
+.sc-news .group-control .control-area [class*="btn-"]{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dadcdf;
+  border: 1px solid var(--color_button_border);
+  background-color: #fff;
+  background-color: var(--color_button1_bg);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.06);
+  border-radius: 50%;
+}
+.sc-news .group-control .control-area [class*="btn-"]:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12);
+  background-color: #fbfbfc;
+}
+.sc-news .group-control .control-area .btn-prev::before{
+  content:'';
+  width: 10px;
+  height: 12px;
+  background-position: -89px -432px;
+  transform: rotate(180deg);
+}
+.sc-news .group-control .control-area .btn-next::before{
+  content:'';
+  width: 10px;
+  height: 12px;
+  background-position: -89px -432px;
+}
+
+.sc-news .group-control .control-area [class*="btn-"]:hover::before{
+  background-position: -78px -432px;
 }
 
 .sc-news .group-control .view-area {
   display: flex;
+  gap: 20px;
   position: absolute;
   top: 0;
   right: 0;
-  padding: 10px;
-  background: #fdd;
+  padding: 18px 20px 18px 0;
+}
+
+.sc-news .group-control .view-area [class*="btn-"]{
+  width: 20px;
+  height: 20px;
+}
+
+.sc-news .group-control .view-area .btn-list{
+  background-position: -388px -329px;
+}
+.sc-news .group-control .view-area .btn-list:hover{
+  background-position: -388px -308px;
+}
+.sc-news .group-control .view-area .btn-thumb{
+  background-position: -413px -231px;
+}
+.sc-news .group-control .view-area .btn-thumb:hover{
+  background-position: -413px -210px;
 }
 
 .sc-login {
@@ -259,8 +414,6 @@ body {
   margin-top: 16px;
   font-size: 1.3rem;
 }
-
-.sc-login .login-area a {}
 
 .sc-login .login-area a+a {
   display: flex;
