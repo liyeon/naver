@@ -367,7 +367,7 @@
               <div class="ad-area">
                 <a href="">
                   <div class="ad-item">
-                    <img src="./assets/images/shopping/ad1.jpg"  alt="마사지의 신세계 폴리오 마사지기">
+                    <img src="./assets/images/shopping/ad1.jpg" alt="마사지의 신세계 폴리오 마사지기">
                   </div>
                   <div class="text">마사지의 신세계 폴리오 마사지기</div>
                 </a>
@@ -388,23 +388,23 @@
                     "바스락 썸머원단제대로된한벌Set",
                     "시원하고예쁜데? 2만원대Sale까지"
                   ];
-  
+
                   for (let i = 0; i < descript.length; i++) {
-                      let num;
-                      if (i < descript.length-1) {
-                        num = '00' + (i + 1);
-                      } else {
-                        num = '0'+(i + 1);
-                      }
-                      let desc = descript[i];
-                      document.write("<li class='product-item'><a href='#'>");
-                      document.write("<figure>");
-                      document.write("<div><img src='./assets/images/shopping/"+num+".jpg' alt='"+desc+"'></div>");
-                      document.write("<figcaption>"+desc+"</figcaption>");
-                      document.write("</figure>");
-                      document.write("</a></li>");
+                    let num;
+                    if (i < descript.length - 1) {
+                      num = '00' + (i + 1);
+                    } else {
+                      num = '0' + (i + 1);
+                    }
+                    let desc = descript[i];
+                    document.write("<li class='product-item'><a href='#'>");
+                    document.write("<figure>");
+                    document.write("<div><img src='./assets/images/shopping/" + num + ".jpg' alt='" + desc + "'></div>");
+                    document.write("<figcaption>" + desc + "</figcaption>");
+                    document.write("</figure>");
+                    document.write("</a></li>");
                   }
-                  </script>
+                </script>
               </ul>
             </div>
           </div>
@@ -491,7 +491,8 @@
                       <p class="category">레시피 집중 탐구</p>
                       <strong class="title">두바이 초콜릿</strong>
                       <span class="desc">
-                        와그작 빠그작 식감에 반하는<br> 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법
+                        와그작 빠그작 식감에 반하는<br> 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법 요즘 핫한 간식 만드는 법
+                        요즘 핫한 간식 만드는 법
                         요즘 핫한 간식 만드는 법
                       </span>
                     </div>
@@ -597,7 +598,11 @@
                       <p class="context">진MARKET</p>
                       <div class="company">진에어</div>
                       <span class="landing">
-                        더 알아보기<svg class="icon_svg" width="7" height="12" viewBox="0 0 7 12"><g fill="none" fill-rule="evenodd"><path stroke="#888" stroke-width="1.6" d="m.6 1 5 5-5 5"></path></g></svg>
+                        더 알아보기<svg class="icon_svg" width="7" height="12" viewBox="0 0 7 12">
+                          <g fill="none" fill-rule="evenodd">
+                            <path stroke="#888" stroke-width="1.6" d="m.6 1 5 5-5 5"></path>
+                          </g>
+                        </svg>
                       </span>
                     </div>
                   </a>
@@ -678,7 +683,7 @@
             </div>
             <div class="feed-area3">
               <strong class="title">테마별 레시피</strong>
-              
+
               <div class="feed-box">
 
                 <div class="control-box">
@@ -840,6 +845,84 @@
               <a href="">
                 <img src="./assets/images/weather.png" alt="날씨 그래프">
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="frame sc-region" aria-label="증시">
+          <div class="group-header">
+            <h2 class="headline">
+              <a href="">증시</a>
+            </h2>
+            <div class="time">07.17. 20:07
+              <button type="button" class="btn-refresh">
+                <span class="blind">새로고침</span>
+              </button>
+            </div>
+          </div>
+          <div class="group-content">
+            <div class="info-area">
+              <a href="">
+                <div class="info-box">
+                  <strong class="title">환율 USD</strong>
+                  <p class="price">1,378.70</p>
+                  <div class="status blue">
+                    <span class="blind">하락</span>
+                    <i class="icon ic-status-down"></i>
+                    6.80 <span class="rate">
+                      -0.49%
+                    </span>
+                  </div>
+                  <div class="stock-box">
+                    <img src="./assets/images/region.png" alt="증시 그래프">
+                  </div>
+                  <div class="stock-text">
+                    3개월 차트
+                  </div>
+              </div>
+            </a>
+            </div>
+            <div class="chart-area">
+              <ul class="chart-list">
+                <li class="chart-item">
+                  <a href="">
+                    <span class="name">하이브</span>
+                    <div class="status blue">
+                      <span class="blind">하락</span>
+                      <i class="icon ic-status-down"></i>
+                      <span class="rate">2.04%</span>
+                      <span class="price">182,500</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="chart-item">
+                  <a href="">
+                    <span class="name">삼성전자</span>
+                    <div class="status blue">
+                      <span class="blind">하락</span>
+                      <i class="icon ic-status-down"></i>
+                      <span class="rate">1.14%</span>
+                      <span class="price">86,700</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="chart-item">
+                  <a href="">
+                    <span class="name">HLB</span>
+                    <div class="status red">
+                      <span class="blind">상승</span>
+                      <i class="icon ic-status-up"></i>
+                      <span class="rate">2.18%</span>
+                      <span class="price">84,300</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="chart-item">
+                  <a href="">
+                    <span class="more">인기종목더보기</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>

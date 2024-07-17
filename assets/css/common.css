@@ -26,7 +26,10 @@
 #skipNav a:active {
   top: 0;
 }
-
+.chart-item .more::before,
+.ic-status-down,
+.ic-status-up,
+.sc-region .group-header .btn-refresh::before,
 .sc-weather .group-header .compare::before,
 .group-notice .link-all::after,
 .control-box .btn-prev::before,
