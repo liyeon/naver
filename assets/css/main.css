@@ -1426,10 +1426,48 @@ body {
 }
 
 /* 위젯 */
+.sc-widget{
+  padding: 20px;
+  background-color: #f4f6fa;
+  background-color: var(--color_board_bg);
+}
+.sc-widget .headline{
+  color: #080808;
+  color: var(--color_title);
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.sc-widget .group-link a{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
 
 
-
-/* 웨일 */
+.sc-widget .group-link .ic-naver{
+  content: "";
+  background-position: -388px -198px;
+  width: 22px;
+  height: 22px;
+}
+.sc-widget .group-link em{
+  font-weight: bold;
+  margin-left: 5px;
+}
+.sc-widget .group-link a::before{
+  content: "";
+  position: absolute;
+  right: 4px;
+  background-position: -450px -13px;
+  width: 8px;
+  height: 12px;
+}
+s/* 웨일 */
 .ad-whale > a{
   padding: 20px;
   display: flex;

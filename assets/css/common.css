@@ -26,6 +26,9 @@
 #skipNav a:active {
   top: 0;
 }
+
+.sc-widget .group-link a::before,
+.sc-widget .group-link .ic-naver,
 .ic-whale,
 .chart-item .more::before,
 .ic-status-down,
