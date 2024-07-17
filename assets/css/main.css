@@ -1424,6 +1424,39 @@ body {
   width: 10px;
   height: 12px;
 }
+
+/* 위젯 */
+
+
+
+/* 웨일 */
+.ad-whale > a{
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.ad-whale > a:hover{
+  text-decoration: underline;
+}
+.ic-whale{
+  display: block;
+  width: 42px;
+  height: 36px;
+  background-position: -69px -69px;
+}
+.ad-whale .text-box{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #606060;
+}
+.ad-whale .text-box strong{
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #101010;
+}
 #footer {
   border-top: 1px solid #ebebeb;
   border-top: 1px solid var(--color_border_in_divider);
