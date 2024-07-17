@@ -1440,6 +1440,137 @@ body {
   font-weight: 800;
 }
 
+.sc-widget .group-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 20px 0;
+}
+.sc-widget .group-content > [class$="-area"]{
+  position: relative;
+  height: 192px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.02);
+  overflow: hidden;
+}
+
+.sc-widget .group-content > [class$="-area"] .headline{
+  padding: 8px 15px;
+  color: #080808;
+  color: var(--color_title);
+  font-size: 1.5rem;
+  line-height: 34px;
+  font-weight: 800;
+}
+.sc-widget .group-content .calendar-area{
+  cursor: pointer;
+}
+.sc-widget .group-content .calendar-area .box{
+  display: flex;
+  flex-direction: column;
+  padding: 0 19px;
+  position: relative;
+}
+.sc-widget .group-content .calendar-area .box time{
+  margin: 8px 10px 0 -1px;
+  font-size: 3.9rem;
+  line-height: 36px;
+  letter-spacing: -2px;
+}
+.sc-widget .group-content .calendar-area .box .date{
+  font-size: 1.3rem;
+}
+.sc-widget .group-content .calendar-area .link-login{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.sc-widget .group-content .memo-area .headline{
+  position: relative;
+  background: linear-gradient(to top, #00b869, #00c772);
+  color: #fff;
+}
+.sc-widget .group-content .memo-area .headline::after{
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+  content: '';
+}
+
+.sc-widget .group-content .memo-area .memo-item{
+  height: 46px;
+  padding: 0 18px;
+  line-height: 46px;
+}
+.sc-widget .group-content .memo-area .memo-item+.memo-item{
+  border-top: 1px solid #ebebeb;
+}
+
+.sc-widget .group-content .memo-area .memo-item:has(> .link-login) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sc-widget .group-content .link-login {
+  font-size: 15px;
+  color: #606060;
+  color: var(--color_caption2);
+  text-decoration: underline;
+}
+.sc-widget .group-content .papago-area{
+  padding: 8px 15px;
+}
+.sc-widget .group-content .papago-area .headline{
+  padding: 8px 0;
+}
+.sc-widget .group-content .papago-area .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+  .sc-widget .group-content .papago-area .ic-papago{
+  background-position: 0px -270px;
+  width: 76px;
+  height: 17px;
+}
+.sc-widget .group-content .papago-area .ic-papago2{
+  display: block;
+  background-position: 0 0;
+  width: 78px;
+  height: 68px;
+}
+.sc-widget .group-content .papago-area a:hover .btn-translate{
+  background: #1280e2;
+}
+.sc-widget .group-content .papago-area .btn-translate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #00a2ff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.04);
+  color: #fff;
+}
+
+.sc-widget .group-content .now-area{
+  grid-column: span 2;
+}
+
+
 .sc-widget .group-link a{
   position: relative;
   display: flex;
@@ -1467,7 +1598,7 @@ body {
   width: 8px;
   height: 12px;
 }
-s/* 웨일 */
+/* 웨일 */
 .ad-whale > a{
   padding: 20px;
   display: flex;
