@@ -42,3 +42,9 @@
   background-repeat: no-repeat;
   background-size: 458px 444px;
 }
+
+.group-commerce .commerce-left .menu-area .menu-item .icon::before{
+  background-image: url('../images/sp_main.png');
+  background-repeat: no-repeat;
+  background-size: 158px 137px;;
+}
