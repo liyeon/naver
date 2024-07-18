@@ -671,6 +671,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+
 .group-commerce .commerce-right figcaption {
   margin-top: 8px;
   font-size: 1.3rem;
@@ -1621,11 +1622,6 @@ body {
   color: #fff;
 }
 
-.sc-widget .group-content .now-area {
-  grid-column: span 2;
-}
-
-
 .sc-widget .group-link a {
   position: relative;
   display: flex;
@@ -1802,6 +1798,170 @@ body {
   width: 24px;
   height: 24px;
   margin: auto;
+}
+
+
+.sc-widget .group-content .vive-area {
+  height: 280px;
+  padding: 20px;
+  grid-column: span 2;
+}
+
+.sc-widget .group-content .vive-area .top-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sc-widget .group-content .vive-area .top-box .ic-vive{
+  background-position: -69px -288px;
+  display: block;
+  width: 68px;
+  height: 18px;
+  margin: 2px 8px 0 0;
+}
+.sc-widget .group-content .vive-area .top-box .btn-refresh{
+  position: relative;
+  color: #606060;
+  color: var(--color_caption2);
+  font-size: 1.3rem;
+  flex: 1;
+}
+.sc-widget .group-content .vive-area .top-box .btn-refresh::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  background-position: -236px -388px;
+  width: 16px;
+  height: 16px;
+}
+.sc-widget .group-content .vive-area .top-box .btn-refresh:hover::before{
+  background-position: -219px -388px;
+}
+
+  .sc-widget .group-content .vive-area .top-box .title{
+  color: #080808;
+  color: var(--color_title);
+  width: 130px;
+  font-size: 1.5rem;
+  line-height: 22px;
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sc-widget .group-content .vive-area .info-box{
+  margin-top: 13px;
+}
+.sc-widget .group-content .vive-area .vive-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.sc-widget .group-content .vive-area .vive-item > a{
+  position: relative;
+}
+.sc-widget .group-content .vive-area .vive-item > a :hover figcaption{
+  text-decoration: underline;
+}
+.sc-widget .group-content .vive-area .vive-item > a :hover img{
+  transform: scale(1.1);
+  }
+.sc-widget .group-content .vive-area .vive-item .thumb{
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 108px;
+  height: 162px;
+}
+.sc-widget .ic-play{
+  position: absolute;
+  right: 8px;
+  bottom: 56px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+}
+.sc-widget .ic-play::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: -450px -99px;
+  width: 7px;
+  height: 10px;
+  margin: auto;
+}
+.sc-widget .ic-play::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(0,0,0,.04);
+  border-radius: inherit;
+}
+.sc-widget .group-content .vive-area .vive-item .thumb::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  border-radius: inherit;
+  background-color: rgba(0,0,0,.09);
+  transform: translate3d(0, 0, 0);
+}
+
+.sc-widget .group-content .vive-area .vive-item .thumb img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.sc-widget .group-content .vive-area .vive-item figcaption{
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 40px;
+  line-height: 20px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 8px;
+}
+.sc-widget .group-content .vive-area .vive-item:last-child > a::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: -5px;
+  width: 4px;
+  height: 154px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #7a7b7c;
+}
+.sc-widget .group-content .vive-area .vive-item:last-child > a::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: -10px;
+  width: 4px;
+  height: 146px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #d0d2d3;
 }
 
 /* 웨일 */

@@ -27,7 +27,9 @@
   top: 0;
 }
 
-
+.sc-widget .ic-play::before,
+.sc-widget .group-content .vive-area .top-box .btn-refresh::before,
+.sc-widget .group-content .vive-area .top-box .ic-vive,
 .sc-widget .dictionary-area .btn-search .text::after,
 .sc-widget .dictionary-area .btn-search .ic-search::before,
 .sc-widget .group-content .papago-area .ic-papago,
