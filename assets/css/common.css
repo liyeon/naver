@@ -26,6 +26,10 @@
 #skipNav a:active {
   top: 0;
 }
+
+
+.sc-widget .dictionary-area .btn-search .text::after,
+.sc-widget .dictionary-area .btn-search .ic-search::before,
 .sc-widget .group-content .papago-area .ic-papago,
 .sc-widget .group-content .papago-area .ic-papago2,
 .sc-widget .group-link a::before,
