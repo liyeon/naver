@@ -1861,6 +1861,7 @@ body {
 }
 .sc-widget .group-content .vive-area .vive-item > a{
   position: relative;
+  display: flex;
 }
 .sc-widget .group-content .vive-area .vive-item > a :hover figcaption{
   text-decoration: underline;
