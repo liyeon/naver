@@ -397,12 +397,16 @@
                       num = '0' + (i + 1);
                     }
                     let desc = descript[i];
-                    document.write("<li class='product-item'><a href='#'>");
-                    document.write("<figure>");
-                    document.write("<div><img src='./assets/images/shopping/" + num + ".jpg' alt='" + desc + "'></div>");
-                    document.write("<figcaption>" + desc + "</figcaption>");
-                    document.write("</figure>");
-                    document.write("</a></li>");
+                    document.write(`
+                      <li class='product-item'>
+                        <a href='#'>
+                          <figure>
+                            <div><img src='./assets/images/shopping/${num}.jpg' alt='${desc}'></div>
+                            <figcaption>${desc}</figcaption>
+                          </figure>
+                        </a>
+                      </li>
+                  `);
                   }
                 </script>
               </ul>
